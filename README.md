@@ -1,11 +1,13 @@
 # Titanic-dataset-EDA...
 Titanic Dataset: Exploratory Data Analysis (EDA) Report
+
 1. Introduction
 The Titanic dataset is one of the most famous datasets used for binary classification tasks — predicting whether a passenger survived (1) or not (0). This project performs a complete exploratory data analysis to:
 
 - Understand the structure and quality of the data
 - Uncover relationships between variables
 - Prepare for building machine learning models
+
 2. Data Loading and Inspection
 Techniques used:
 
@@ -21,6 +23,7 @@ Key Findings:
 The dataset contains variables like Pclass, Sex, Age, SibSp, Parch, Fare, Embarked.
 Missing values were found in Age, Embarked, and Cabin.
 Target variable (Survived) is binary.
+
 3. Data Cleaning
 Steps Taken:
 
@@ -33,6 +36,7 @@ Steps Taken:
 Why:
 Machine learning models cannot handle missing values or text directly.
 Categorical values must be encoded numerically.
+
 4. Data Visualization and Exploration
 4.1 Pairplot
 Technique: sns.pairplot()
@@ -84,6 +88,7 @@ Visualize the interaction between two continuous variables, colored by survival.
 Observations:
 Survivors cluster more around higher fares.
 Some older passengers survived, but not predominantly.
+
 5. Key Insights from EDA
 Feature	Relationship to Survival	Notes
 Sex	Females had higher survival	Strong predictor
@@ -91,6 +96,7 @@ Pclass	1st class had higher survival	Wealth/status mattered
 Fare	Higher fare → higher survival	Possibly richer passengers were saved
 Age	Very young passengers had better survival	Needs deeper modeling
 Embarked	Minor differences by port	Needs careful feature engineering
+
 6. Why EDA is Needed
 EDA is critical because:
 
@@ -101,6 +107,7 @@ It prevents mistakes (e.g., using messy, noisy data blindly).
 
 Good EDA leads to higher model accuracy and better understanding.
 Without proper EDA, machine learning models may learn the wrong patterns, overfit, or simply perform poorly.
+
 📌 Conclusion
 Through this detailed EDA:
 
